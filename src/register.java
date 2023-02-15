@@ -5,5 +5,7 @@ public class register {
         Scanner scan = new Scanner(System.in);
         String login = scan.next("Введите логин: ");
         String password = scan.next("Введите пароль: ");
+
+        System.out.println("Приветствую " + login);
     }
 }
