@@ -32,5 +32,6 @@ public class Main {
         }
         System.out.println("Ваш массив: " + Arrays.toString(arr));
         System.out.println("Самое большое число в массиве: " + num);
+
     }
 }
