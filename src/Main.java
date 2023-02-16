@@ -36,4 +36,13 @@ public class Main {
         System.out.println("Самое большое число в массиве: " + num);
 
     }
+
+    public static void info(){
+        String name, lastName;
+        Scanner scan = new Scanner(System.in);
+        name = scan.next("Введите имя: ");
+        lastName = scan.next("введите фамилию: ");
+        System.out.println("приветствую " + name + lastName);
+
+    }
 }
