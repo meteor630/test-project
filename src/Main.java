@@ -19,7 +19,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int num = 0;
-        int RandomArr = 5 + (int) (Math.random() * 15);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Сколько элементов должго быть в массиве: ");
+        int RandomArr = scan.nextInt();
         int[] arr = new int[RandomArr];
         for (int i = 0; i<arr.length; i++) {
             int RandomNum = 10 + (int) (Math.random() * 100);
