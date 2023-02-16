@@ -4,20 +4,24 @@ import java.util.Random;
 import java.util.Scanner;
 
 
-//    public class Main {
-//    public static void main(String[] args) {
-//    int a, b, sum;
-//    Scanner scan = new Scanner(System.in);
-//    a = scan.nextInt();
-//    b = scan.nextInt();
-//    sum = a + b;
-//    System.out.println("суума чилел равна: " + sum);
-//    }
-//}
-
-
 public class Main {
     public static void main(String[] args) {
+        info();
+        randomizer();
+    }
+
+    public static void info(){
+        String name, lastName;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите имя: ");
+        name = scan.nextLine();
+        System.out.println("Введите фамилию: ");
+        lastName = scan.next();
+        System.out.println("приветствую " + name + " " + lastName);
+
+    }
+
+    public static void randomizer(){
         int num = 0;
         Scanner scan = new Scanner(System.in);
         System.out.println("Сколько элементов должго быть в массиве: ");
@@ -34,15 +38,5 @@ public class Main {
         }
         System.out.println("Ваш массив: " + Arrays.toString(arr));
         System.out.println("Самое большое число в массиве: " + num);
-
-    }
-
-    public static void info(){
-        String name, lastName;
-        Scanner scan = new Scanner(System.in);
-        name = scan.next("Введите имя: ");
-        lastName = scan.next("введите фамилию: ");
-        System.out.println("приветствую " + name + lastName);
-
     }
 }
