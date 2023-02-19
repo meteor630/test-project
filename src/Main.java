@@ -6,8 +6,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        info();
-        randomizer();
+//        info();
+        game();
+//        randomizer();
     }
 
     public static void info(){
@@ -38,5 +39,25 @@ public class Main {
         }
         System.out.println("Ваш массив: " + Arrays.toString(arr));
         System.out.println("Самое большое число в массиве: " + num);
+    }
+
+    public static void game(){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("чтобы вы хотели сделать?");
+        System.out.println("1) Угадай число");
+        int out = scan.nextInt();
+        if (out == 1){
+            int randomNum = 1 + (int) (Math.random() * 10);
+            System.out.println("Угадайте число до 10");
+            for (int i = 0; i<=10; i++){
+                int num = scan.nextInt();
+                if (num == randomNum){
+                    System.out.println("Поздравляю, вы угадали!)");
+                    break;
+                }else {
+                    System.out.println("вы не угадали( попробуйте еще");
+                }
+            }
+        }
     }
 }
